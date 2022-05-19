@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-hC-z6N">
+                                <rect key="frame" x="156.5" y="332.5" width="101" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="GoT Qoutes"/>
+                                <connections>
+                                    <action selector="showGoTQoutes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2G-es-Bk7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUr-1f-i3v">
+                                <rect key="frame" x="167.5" y="371" width="79" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="TTC Bus"/>
+                                <connections>
+                                    <action selector="showTTCBus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxQ-JK-Aap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX7-xX-LQr">
+                                <rect key="frame" x="167.5" y="410" width="79" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Weather"/>
+                                <connections>
+                                    <action selector="showWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ur-23-3jB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kX7-xX-LQr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XqH-7M-qiy"/>
+                            <constraint firstItem="VHZ-hC-z6N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="dRO-pV-zEk"/>
+                            <constraint firstItem="MUr-1f-i3v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7x-5j-sgQ"/>
+                            <constraint firstItem="VHZ-hC-z6N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hFh-fG-enj"/>
+                            <constraint firstItem="kX7-xX-LQr" firstAttribute="top" secondItem="MUr-1f-i3v" secondAttribute="bottom" constant="8" symbolic="YES" id="mp9-Nc-3Uh"/>
+                            <constraint firstItem="MUr-1f-i3v" firstAttribute="top" secondItem="VHZ-hC-z6N" secondAttribute="bottom" constant="7.5" id="qBk-bb-puY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
